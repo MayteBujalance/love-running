@@ -1,31 +1,33 @@
-/* Asterisk wildcard is a universal selector.
-overrides the default styles that browsers apply and applies the specified styles to them*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
+/* General styles */
 body {
-    background-color: #daeef3;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
 }
 
+
+/* Header */
+header {
+    background-color: lightcoral;
+}
+
+/* Main content */
 main {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
+    background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
 }
 
-footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Footer */
+footer {
+    background-color: orange;
 }
