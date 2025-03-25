@@ -7,27 +7,31 @@
 
 /* General styles */
 body {
+    /* allow it to stretch larger than the height of the
+screen when there is enough content on the page that the user needs to scroll. */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
+    color: black;
 }
 
 
 /* Header */
 header {
-    background-color: lightcoral;
+    background-color:grey;
+    color: white;
 }
 
 /* Main content */
 main {
-    background-color: lightblue;
+    background-color: rgb(230, 244, 248);
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
 /* Footer */
 footer {
-    background-color: orange;
+    background-color: grey;
+    color: white;
 }
