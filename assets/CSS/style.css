@@ -22,9 +22,15 @@ screen when there is enough content on the page that the user needs to scroll. *
 
 /* Header */
 header {
-    background-color:grey;
-    color: white;
-}
+    background-color: white;
+    padding: 0 1rem; /* prevents the text from sticking to the side */
+    position: fixed; /* Fixed the nav bar to the top of the page */ 
+    color: black;
+    z-index: 99; /* Ensures the nav bar is on top of other elements */
+    width: 100%; /* Ensures the nav bar spans the full width of the page */
+    box-shadow: 0 2px 2px black; /* Adds a shadow to the nav bar, bottom shadow, blur, black */
+}   
+
 
 h1 {
     font-family: 'Oswald', sans-serif;
