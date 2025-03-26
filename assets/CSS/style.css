@@ -30,13 +30,44 @@ header {
     width: 100%; /* Ensures the nav bar spans the full width of the page */
     box-shadow: 0 2px 2px black; /* Adds a shadow to the nav bar, bottom shadow, blur, black */
 }   
-
+header a {
+    color: inherit;
+    text-decoration: none; /* Removes underline from links */
+   
+}
 
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: #252525;
+    }
+
+/* Navigation */
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none; /* Removes bullet points from unordered list */
     
-}
-/* Main content */
+    /* display: flex; 
+    justify-content: space-between;
+    align-items: center;
+   height: 5rem;* add this to make the nav bar  horizontal*/
+ }
+/* Targets the elements inside nav, but only the list, so the 3 elements*/
+ #menu >li {    
+    margin-bottom: 1rem; /* Adds space between the list items */
+
+    /*display: inline-block; /* Makes the list items display horizontally
+    margin: 0 1rem; /* Adds space between the list items
+    padding: 1rem; /* Adds padding to the list items
+    transition: background-color 0.3s; /* Smoothly changes the background color of the list items */
+  }
+
+  .active {
+    border-bottom: 1px solid black; /* Adds a border to the bottom of the active list item */
+  }
+    /* Main content */
 main {
     background-color: rgb(230, 244, 248);
     /* Make main element take up any surplus space to push footer down */
