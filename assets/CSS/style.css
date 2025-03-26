@@ -16,6 +16,7 @@ screen when there is enough content on the page that the user needs to scroll. *
     flex-direction: column;
     /* Generic project styles */
     color: black;
+    font-family:lato, sans-serif
 }
 
 
@@ -25,6 +26,10 @@ header {
     color: white;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+    
+}
 /* Main content */
 main {
     background-color: rgb(230, 244, 248);
