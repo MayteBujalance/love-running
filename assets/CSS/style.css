@@ -27,6 +27,9 @@ header {
     z-index: 99; /* Ensures the nav bar is on top of other elements */
     width: 100%; /* Ensures the nav bar spans the full width of the page */
     box-shadow: 0 2px 2px black; /* Adds a shadow to the nav bar, bottom shadow, blur, black */
+    display: flex;
+    justify-content: space-between; /* Aligns the logo and nav items to the left and right of the nav bar */
+    align-items: baseline; /* Aligns the logo and nav items to the vertical center of the nav bar */
 }   
 
 header a {
@@ -53,7 +56,7 @@ h1 {
    add this to make the nav bar  horizontal*/
  }
 
-/* Targets the elements inside nav, but only the list, so the 3 elements*/
+/* menu argets the elements inside nav, but only the list, so the 3 elements*/
  #menu >li {    
     margin-bottom: 1rem; /* Adds space between the list items */
     /*display: inline-block; /* Makes the list items display horizontally
@@ -76,10 +79,23 @@ h1 {
     box-shadow: inherit;
     display: none; /* Hides the dropdown by default */
     z-index: 98; /* Ensures the dropdown is on top of other elements */
-
+    top: 100%; /* Aligns the dropdown to the bottom of the nav bar */
   }
+/* Nav toggle. */
+/* The ~ indicates that we want to target the adjoining nav element.  */
+#nav-toggle:checked~nav {
+    display: block; /* Shows the dropdown when the checkbox is checked */
+      }
 
-    /* Main content */
+#nav-toggle {
+    display: none; /* Hides the checkbox */
+    
+      }
+      #nav-toggle-label {
+        font-size: 2rem; /* Increases the size of the hamburger icon */
+        
+       } 
+
 main {
     background-color: rgb(230, 244, 248);
     /* Make main element take up any surplus space to push footer down */
