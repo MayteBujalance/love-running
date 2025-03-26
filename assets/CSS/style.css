@@ -9,16 +9,14 @@
 
 /* General styles */
 body {
-    /* allow it to stretch larger than the height of the
-screen when there is enough content on the page that the user needs to scroll. */
-    min-height: 100vh;
+     min-height: 100vh;    /* allow it to stretch larger than the height of the
+    screen when there is enough content on the page that the user needs to scroll. */
     display: flex;
     flex-direction: column;
     /* Generic project styles */
     color: black;
     font-family:lato, sans-serif
 }
-
 
 /* Header */
 header {
@@ -30,11 +28,11 @@ header {
     width: 100%; /* Ensures the nav bar spans the full width of the page */
     box-shadow: 0 2px 2px black; /* Adds a shadow to the nav bar, bottom shadow, blur, black */
 }   
+
 header a {
     color: inherit;
     text-decoration: none; /* Removes underline from links */
-   
-}
+   }
 
 h1 {
     font-family: 'Oswald', sans-serif;
@@ -48,16 +46,16 @@ h1 {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none; /* Removes bullet points from unordered list */
-    
     /* display: flex; 
     justify-content: space-between;
     align-items: center;
-   height: 5rem;* add this to make the nav bar  horizontal*/
+   height: 5rem;*
+   add this to make the nav bar  horizontal*/
  }
+
 /* Targets the elements inside nav, but only the list, so the 3 elements*/
  #menu >li {    
     margin-bottom: 1rem; /* Adds space between the list items */
-
     /*display: inline-block; /* Makes the list items display horizontally
     margin: 0 1rem; /* Adds space between the list items
     padding: 1rem; /* Adds padding to the list items
@@ -65,8 +63,22 @@ h1 {
   }
 
   .active {
-    border-bottom: 1px solid black; /* Adds a border to the bottom of the active list item */
+    border-bottom: 1px solid black; /* Adds a border(underlines) to the bottom of the active list item */
   }
+
+  /* Navbar styles with dropdown toggle */
+  nav {
+    position: absolute; /* Allows the dropdown to be positioned relative to the nav bar */
+    background-color: inherit; /* Makes the dropdown background the same as the nav bar */
+    width: 100%;
+    left: 0; /* Aligns the dropdown to the left of the nav bar */
+    padding: 0 1rem;
+    box-shadow: inherit;
+    display: none; /* Hides the dropdown by default */
+    z-index: 98; /* Ensures the dropdown is on top of other elements */
+
+  }
+
     /* Main content */
 main {
     background-color: rgb(230, 244, 248);
