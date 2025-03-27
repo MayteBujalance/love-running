@@ -47,7 +47,7 @@ h1 {
 /* Navigation */
 #menu {
     font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: 4px; /* Adds space between the letters of the nav items */
     list-style-type: none; /* Removes bullet points from unordered list */
     /* display: flex; 
     justify-content: space-between;
@@ -59,7 +59,6 @@ h1 {
 /* menu argets the elements inside nav, but only the list, so the 3 elements*/
  #menu >li {    
     margin-bottom: 1rem; /* Adds space between the list items */
-    /*display: inline-block; /* Makes the list items display horizontally
     margin: 0 1rem; /* Adds space between the list items
     padding: 1rem; /* Adds padding to the list items
     transition: background-color 0.3s; /* Smoothly changes the background color of the list items */
@@ -91,10 +90,9 @@ h1 {
     display: none; /* Hides the checkbox */
     
       }
-      #nav-toggle-label {
-        font-size: 2rem; /* Increases the size of the hamburger icon */
-
-       } 
+#nav-toggle-label {
+    font-size: 2rem; /* Increases the size of the hamburger icon */
+      } 
 
 main {
     background-color: rgb(230, 244, 248);
@@ -107,4 +105,28 @@ main {
 footer {
     background-color: grey;
     color: white;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  /* Header */
+  nav {
+      display: block;
+      position: relative;
+      box-shadow: none;
+      width: fit-content;
+      padding-right: 1rem;
+  }
+
+  #menu {
+      display: flex;
+  }
+
+  #menu > li {
+      padding-left: 1rem;
+  }
+
+  #nav-toggle-label {
+      display: none;
+  }
 }
