@@ -102,10 +102,20 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: grey;
-    color: white;
+#social-networks {
+  text-align: center;
+  padding: 20px 0; /* Adds space above and below the social network icons */
+  display: flex; /* Aligns the social network icons to the center of the footer */
+  justify-content: space-evenly;  /* Aligns the social network icons to the center of the footer */
+  list-style-type: none;      /* Removes bullet points from unordered list */
 }
+
+#social-networks i {
+  font-size: 150%;
+  padding: 5%; /* Adds space around the social network icons */
+  color: black; /* Changes the color of the social network icons */
+}
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
