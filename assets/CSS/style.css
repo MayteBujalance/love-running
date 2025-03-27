@@ -142,6 +142,16 @@ footer {
       /* Push main content down to accommodate larger header */
       margin-top: 79px; /* Pushes the main content down to prevent it from being hidden by the nav bar */
     }
+}
+
+/* Media query: laptops and larger (992px and up) */
+@media screen and (min-width: 992px) {
+  /* Header */
+#menu a:hover {
+  border-bottom: 1px solid black; /* Adds a border to the bottom of the nav bar when hovered */
+}
+
+
 
 
 }
