@@ -18,6 +18,14 @@ body {
     font-family:lato, sans-serif
 }
 
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  color: #252525;
+  }
+
+
 /* Header */
 header {
     background-color: white;
@@ -37,12 +45,6 @@ header a {
     text-decoration: none; /* Removes underline from links */
    }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase; 
-    letter-spacing: 2px;
-    color: #252525;
-    }
 
 /* Navigation */
 #menu {
@@ -99,13 +101,29 @@ main {
     flex: 1 0 auto;
     margin-top: 47px; /* Pushes the main content down to prevent it from being hidden by the nav bar */
 }
-
+/* Hero section image and text*/
 #hero {
   height: 600px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover; /* centers horizontaly first and vertically  and covers entire hero section */
+  position: relative; /* it establishes itself as the positioning context for any absolutely positioned child elements within it, like #cover-text child. In this case, #hero becomes the reference point for positioning any of its child elements. */
 }
 
+#cover-text {
+  background-color: palevioletred; /* if aaded: , .8; Adds a pink background color with 80% opacity */
+  opacity: 0.8; /* Adds transparency of 80% to the background color */
+  font-size: 130%;
+  position: absolute; /* Adds independent positioning from #hero. you must indicate coordinates, see next */
+  bottom: 30px; /* Adds space from the bottom of the hero section */
+  width: 80%; /* Makes the text 80% of the width of the hero section */
+  min-height: 180px; /* Sets a minimum height for the text */
+  padding-top: 40px; /* Adds space above the text */
+  padding-left: 10px;
+}
+/* Adds specificity. Targets direct children of cover-text instead of all descendants.  */
+#cover-text > h2, #cover-text > h3 {
+  color: white;
+}
 /* Footer */
 #social-networks {
   text-align: center;
@@ -151,11 +169,16 @@ main {
     margin: 0 0.5rem; /* Adds space to the left and right of the logo */
   }
   
-  
-    /* Main content */
+      /* Main content */
     main {
       /* Push main content down to accommodate larger header */
       margin-top: 79px; /* Pushes the main content down to prevent it from being hidden by the nav bar */
+    }
+
+    /* Hero */
+    #cover-text {
+      width: 300px; /* Makes the text 300px of the width of the hero section */
+      right: 50px; /* Adds space from the right of the hero section */
     }
 }
 
