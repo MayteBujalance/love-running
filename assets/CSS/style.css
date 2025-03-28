@@ -267,7 +267,7 @@ hr {
   }
 
   #benefits-image {
-    oder:0; /* Changes the order of the benefits image and text */
+    order:0; /* Changes the order of the benefits image and text */
   }
 
   #benefits-mental {
