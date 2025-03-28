@@ -124,6 +124,31 @@ main {
 #cover-text > h2, #cover-text > h3 {
   color: white;
 }
+
+/* Main */
+#reasons {
+  margin: 20px auto; /* hight and Centers the reasons section */
+  width: 90%;
+}
+#reasons h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 280%;
+}
+#benefits-physical> div, #benefits-mental> div{
+  line-height: 20px;  /* Adds space between the benefits */
+ margin-bottom: 20px; /* Adds space below the benefits */
+}
+
+#benefits p {
+padding: 0 20px; /* Adds 0 space up and down, adds right and left around the benefits */
+}
+
+hr {
+  border-top: 1px solud black; /* Adds a solid black line above and below the hr element */
+  margin: 5px 0; /* Adds space above and below the hr element */
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
