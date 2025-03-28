@@ -221,6 +221,22 @@ hr {
       width: 300px; /* Makes the text 300px of the width of the hero section */
       right: 50px; /* Adds space from the right of the hero section */
     }
+
+    /* Reasons section */
+    #benefits-physical, #benefits-mental {
+      display: flex;
+      flex-direction: column; 
+      width: 100%;
+    }
+
+    #benefits-physical > div, #benefits-mental > div {
+      width: 75%;
+    }
+
+    #benefits-mental > div {
+      text-align: end;  /* Aligns the text horizontally to the right of the section */
+      align-self: flex-end; /* Aligns the text to the right of the parent */
+    }
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -229,8 +245,34 @@ hr {
 #menu a:hover {
   border-bottom: 1px solid black; /* Adds a border to the bottom of the nav bar when hovered */
 }
+}
+/* Media query: larger (1200px and up) */
+@media screen and (min-width: 1200px) {
+  /* reasons section */
+  #benefits {
+    display: flex; /* Aligns the benefits to the center of the section */
+    justify-content: row; /* Aligns the benefits horizontally */
+  }
 
+  #benefits > div {
+    flex: 1;  /* shorthand property for the flex-grow 1 expand equally, flex-shrink 1 shrink proportionaly, and flex-basis 0 so no size and grow based on space.*/
+  }
 
+  #benefits-image {
+    oder:0; /* Changes the order of the benefits image and text */
+  }
 
+  #benefits-mental {
+    order: 1; 
+  }
 
+  #benefits-mental > div {
+    align-self: flex-start; /* Aligns the text to the left of the parent */
+  }
+
+  #benefits-physical > div {
+    align-self: flex-end; /* Aligns the text to the right of the parent */
+  }
+
+    
 }
