@@ -165,6 +165,14 @@ hr {
   justify-content: center; /* Aligns horizontally the benefits image and text to the center of the section */
 }
 
+/* Meetup Times section */
+#times {
+  background: url('../images/clissold-park.webp') no-repeat center/cover;
+  /* Handles responsivity without the need for a media query */
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
