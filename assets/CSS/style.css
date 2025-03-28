@@ -149,6 +149,22 @@ hr {
   margin: 5px 0; /* Adds space above and below the hr element */
 }
 
+#circle-cover-bg {
+  background: url("../images/reasons-image.webp") no-repeat top center/cover; /* Centers the image horizontally and vertically and covers the entire section */
+  height: 90vw; /* Sets the height of the section to 90% of the viewport width */
+  width: 90vw; /* Sets the width of the section to 90% of the viewport width */
+  margin-bottom: 20px; /* Adds space below the section */
+  border-radius: 50%; /* Makes a circle. Rounds the corners of the section */
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benefits-image {
+  display: flex; /* Aligns the benefits image and text to the center of the section */
+  align-items: center;  /* Aligns vertically the benefits image and text to the center of the section */
+  justify-content: center; /* Aligns horizontally the benefits image and text to the center of the section */
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
