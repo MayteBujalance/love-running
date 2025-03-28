@@ -95,10 +95,15 @@ h1 {
       } 
 
 main {
-    background-color: rgb(230, 244, 248);
-    /* Make main element take up any surplus space to push footer down */
+  /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px; /* Pushes the main content down to prevent it from being hidden by the nav bar */
+}
+
+#hero {
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image.webp") no-repeat center center/cover; /* centers horizontaly first and vertically  and covers entire hero section */
 }
 
 /* Footer */
