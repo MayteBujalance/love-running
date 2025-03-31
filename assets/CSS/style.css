@@ -191,6 +191,17 @@ hr {
 #times h3{
   color: white;
 }
+
+/* Gallery page */
+#photos img {
+  width: 100%; /* Makes the images responsive to the width of the container */
+  line-height: 1em; /* Adds space between the images */
+}
+
+#photos {
+  line-height: 0; /* Removes space between the images */
+}
+
 /* Footer */
 #social-networks {
   text-align: center;
@@ -206,6 +217,37 @@ hr {
   color: black; /* Changes the color of the social network icons */
 }
 
+/* Media query: larger or landscape phones (576px and up */
+@media screen and (min-width: 576px) {
+#photos {
+  column-count: 2; /* Sets the number of columns to 2 */
+  column-gap: 0; /* Sets the gap between the columns to 0 */
+  }
+}
+
+  /* Header */
+  header {
+    padding: 0 2rem; /* Adds space to the left and right of the nav bar */
+    height: 80px; /* Sets the height of the nav bar */
+  }
+
+  #menu {
+    font-size: 120%; /* Increases the font size of the nav items */
+  }
+
+  #menu > li {
+    margin-bottom: 0; /* Removes space between the list items */
+    margin: 0 1rem; /* Adds space between the list items */
+    padding: 1rem; /* Adds padding to the list items */
+  }
+
+  #logo {
+    font-size: 200%;
+    line-height: 80px; /* Aligns the logo to the vertical center of the nav bar giving extra space at the top */
+    margin: 0; /* Removes space to the left and right of the logo */
+  }
+  
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -263,7 +305,12 @@ hr {
       text-align: end;  /* Aligns the text horizontally to the right of the section */
       align-self: flex-end; /* Aligns the text to the right of the parent */
     }
-}
+  /* Gallery */
+    #photos {
+      column-count: 3;
+    }
+  }
+
 
 /* Media query: laptops and larger (992px and up) */
 @media screen and (min-width: 992px) {
@@ -271,7 +318,13 @@ hr {
 #menu a:hover {
   border-bottom: 1px solid black; /* Adds a border to the bottom of the nav bar when hovered */
 }
+
+  /* Gallery */
+  #photos {
+    column-count: 4; /* Sets the number of columns to 4 */
+  }
 }
+
 /* Media query: larger (1200px and up) */
 @media screen and (min-width: 1200px) {
   /* reasons section */
