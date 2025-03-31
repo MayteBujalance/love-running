@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: black;
-    font-family:lato, sans-serif
+    font-family:"lato", sans-serif
 }
 
 h1, h2, h3 {
@@ -54,19 +54,13 @@ header a {
     font-size: 110%;
     letter-spacing: 4px; /* Adds space between the letters of the nav items */
     list-style-type: none; /* Removes bullet points from unordered list */
-    /* display: flex; 
-    justify-content: space-between;
-    align-items: center;
-   height: 5rem;*
-   add this to make the nav bar  horizontal*/
+   
  }
 
-/* menu argets the elements inside nav, but only the list, so the 3 elements*/
+/* menu Targets the elements inside nav, but only the list, so the 3 elements*/
  #menu >li {    
-    margin-bottom: 1rem; /* Adds space between the list items */
-    margin: 0 1rem; /* Adds space between the list items
-    padding: 1rem; /* Adds padding to the list items
-    transition: background-color 0.3s; /* Smoothly changes the background color of the list items */
+    margin-bottom: 1em; /* Adds space between the list items */
+   
   }
 
   .active {
@@ -76,11 +70,11 @@ header a {
   /* Navbar styles with dropdown toggle */
   nav {
     position: absolute; /* Allows the dropdown to be positioned relative to the nav bar */
-    background-color: inherit; /* Makes the dropdown background the same as the nav bar */
+    background-color: #ffffff; /* Makes the dropdown background the same as the nav bar */
     width: 100%;
     left: 0; /* Aligns the dropdown to the left of the nav bar */
     padding: 0 1rem;
-    box-shadow: inherit;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: none; /* Hides the dropdown by default */
     z-index: 98; /* Ensures the dropdown is on top of other elements */
     top: 100%; /* Aligns the dropdown to the bottom of the nav bar */
@@ -93,17 +87,23 @@ header a {
 
 #nav-toggle {
     display: none; /* Hides the checkbox */
-    
-      }
-#nav-toggle-label {
+}
+
+.nav-toggle-label {
     font-size: 2rem; /* Increases the size of the hamburger icon */
       } 
 
+/* Main content */
 main {
-  /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px; /* Pushes the main content down to prevent it from being hidden by the nav bar */
+  /* Enlarge main element to push footer down*/
+  flex: 1 0 auto;
+  /* Add margin at the top to prevent content from being covered by the header */
+  margin-top: 47px;
+  /* Enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
 }
+
 /* Hero section image and text*/
 #hero {
   height: 600px;
@@ -168,7 +168,7 @@ hr {
   justify-content: center; /* Aligns horizontally the benefits image and text to the center of the section */
 }
 
-/* Meetup Times section */
+
 /* Meetup Times section */
 #times {
   background: url('../images/clissold-park.webp') no-repeat center/cover;
@@ -200,6 +200,51 @@ hr {
 
 #photos {
   line-height: 0; /* Removes space between the images */
+}
+
+/* FORM sign-up page */
+#signup {
+  background-image:  url("../images/signup-image.webp"); /* Adds a background image to the sign-up section */
+  background-size: cover;
+  background-position: 75%;
+  flex-grow: 1; /* Allows the sign-up section to grow and fill the available space in the row */
+  padding: 20px; /* Adds space around the sign-up section */
+}
+
+#signup-form {
+  color: #ffffff;
+  background-color: rgba(60, 60, 60, 0.6);
+  padding: 30px;
+}
+
+#signup-form>h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input {
+  background: transparent;
+  color: #fafafa; 
+  width: 100%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;   
+  padding: 0 5px;
+}
+.radio-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #454b1b;
+  color: #fafafa;
 }
 
 /* Footer */
@@ -309,6 +354,28 @@ hr {
     #photos {
       column-count: 3;
     }
+
+    /* Form */
+    #signup {
+      background-position: center;
+      position: relative;
+  }
+
+  #signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+
+.text-input:hover {
+  border-color: #f16c6b;
+}
+
+.join-button:hover {
+  background-color: #fafafa;
+  color: #454b1b;
+}
   }
 
 
@@ -352,6 +419,5 @@ hr {
   #benefits-physical > div {
     align-self: flex-end; /* Aligns the text to the right of the parent */
   }
-
     
 }
