@@ -147,7 +147,7 @@ main {
 padding: 0 20px; /* Adds 0 space up and down, adds right and left around the benefits */
 }
 
-hr {
+#benefits hr{
   border-top: 1px solud black; /* Adds a solid black line above and below the hr element */
   margin: 5px 0; /* Adds space above and below the hr element */
 }
@@ -208,7 +208,7 @@ hr {
   background-size: cover;
   background-position: 75%;
   flex-grow: 1; /* Allows the sign-up section to grow and fill the available space in the row */
-  padding: 20px; /* Adds space around the sign-up section */
+  padding: 20px 10% 0 10%; /* Adds space around the sign-up section */
 }
 
 #signup-form {
@@ -313,7 +313,7 @@ hr {
       padding-left: 1rem;
   }
 
-  #nav-toggle-label {
+  .nav-toggle-label {
       display: none;
   }
 
