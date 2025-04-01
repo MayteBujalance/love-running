@@ -72,7 +72,7 @@ header a {
     position: absolute; /* Allows the dropdown to be positioned relative to the nav bar */
     background-color: #ffffff; /* Makes the dropdown background the same as the nav bar */
     width: 100%;
-    right: 0; /* Aligns the dropdown to the left of the nav bar */
+    left: 0; /* Aligns the dropdown to the left of the nav bar */
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none; /* Hides the dropdown by default */
@@ -203,6 +203,7 @@ padding: 0 20px; /* Adds 0 space up and down, adds right and left around the ben
 }
 
 /* FORM sign-up page */
+
 #signup {
   background-image:  url("../images/signup-image.webp"); /* Adds a background image to the sign-up section */
   background-size: cover;
@@ -270,42 +271,25 @@ padding: 0 20px; /* Adds 0 space up and down, adds right and left around the ben
   }
 }
 
-  /* Header */
-  header {
-    padding: 0 2rem; /* Adds space to the left and right of the nav bar */
-    height: 80px; /* Sets the height of the nav bar */
-  }
-
-  #menu {
-    font-size: 120%; /* Increases the font size of the nav items */
-  }
-
-  #menu > li {
-    margin-bottom: 0; /* Removes space between the list items */
-    margin: 0 1rem; /* Adds space between the list items */
-    padding: 1rem; /* Adds padding to the list items */
-  }
-
-  #logo {
-    font-size: 200%;
-    line-height: 80px; /* Aligns the logo to the vertical center of the nav bar giving extra space at the top */
-    margin: 0; /* Removes space to the left and right of the logo */
-  }
   
 
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
-  nav {
-      display: block;
-      position: fixed;
-      top: 20px;
-      right: 10px;
-      box-shadow: none;
-      width: fit-content;
-      padding-right: 1rem;
-  }
+  nav{
+
+    display: block;
+
+    position: relative;
+
+    box-shadow: none;
+
+    width: fit-content;
+
+    padding-right: 1rem;
+
+}
 
   #menu {
       display: flex;
@@ -355,6 +339,7 @@ padding: 0 20px; /* Adds 0 space up and down, adds right and left around the ben
   /* Gallery */
     #photos {
       column-count: 3;
+      column-gap: 0;
     }
 
     /* Form */
@@ -390,7 +375,8 @@ padding: 0 20px; /* Adds 0 space up and down, adds right and left around the ben
 
   /* Gallery */
   #photos {
-    column-count: 4; /* Sets the number of columns to 4 */
+    column-count: 4;
+    column-gap: 0;
   }
 }
 
