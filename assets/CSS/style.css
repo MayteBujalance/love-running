@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: black;
-    font-family:"lato", sans-serif
+    font-family:"lato", sans-serif;
 }
 
 h1, h2, h3 {
@@ -72,7 +72,7 @@ header a {
     position: absolute; /* Allows the dropdown to be positioned relative to the nav bar */
     background-color: #ffffff; /* Makes the dropdown background the same as the nav bar */
     width: 100%;
-    left: 0; /* Aligns the dropdown to the left of the nav bar */
+    right: 0; /* Aligns the dropdown to the left of the nav bar */
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none; /* Hides the dropdown by default */
@@ -299,7 +299,9 @@ padding: 0 20px; /* Adds 0 space up and down, adds right and left around the ben
   /* Header */
   nav {
       display: block;
-      position: relative;
+      position: fixed;
+      top: 20px;
+      right: 10px;
       box-shadow: none;
       width: fit-content;
       padding-right: 1rem;
